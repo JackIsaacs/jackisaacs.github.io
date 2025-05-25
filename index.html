@@ -2,13 +2,171 @@
     <head>
         <title>Jack Isaacs | Landing Page</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <script src="sidebar.js" defer></script>
+        <script src="emailto.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1>Jack Isaacs</h1>
-        </header>
+        <my-sidebar></my-sidebar>
 
-        <br>
-        In development...
-    </body>
+        <main>
+            <section id="About">
+                <h1>About</h1>
+                <div class="about-container" style="display: flex; flex-wrap: wrap; gap: 2em; align-items: center;">
+                    <div class="about-image" style="flex: 0 0 150px;">
+                      <img src="images/pp.JPEG" alt="Profile photo" style="width: 100%; border-radius: 8px;">
+                    </div>
+                
+                    <div class="about-text" style="flex: 1 1 300px;">
+                      <p>
+                        I'm a senior software engineer with a strong focus on Unreal Engine development. My day-to-day involves building clean, maintainable systems, working with complex Blueprints and C++ codebases, and collaborating closely with cross-disciplinary teams to improve tools and workflows.
+                      </p>
+                      <p>
+                        My background is rooted in game development, but I’m equally passionate about standalone software projects — particularly those that involve solving tricky technical problems or creating polished user interfaces. I enjoy working with C++, C#, and Python across a range of contexts.
+                      </p>
+                      <p>
+                        I value thoughtful architecture, readable code, and shipping things that actually make people’s lives easier. While I’m currently focused on co-development within a game studio, I’m always curious about new challenges and enjoy connecting with others in the software space.
+                      </p>
+                    </div>
+                  </div>
+            </section>
+
+            <section id="Services">
+                <h1>Services</h1>
+                <p>I’m a senior software engineer specializing in Unreal Engine development. I focus on building modular, maintainable systems with a strong emphasis on UI architecture, Blueprint-C++ integration, and co-development workflows.</p>
+                
+                <ul>
+                    <li>
+                      <strong>🎮 Gameplay & Systems Programming</strong><br>
+                      Custom gameplay mechanics and system design using both Blueprint and C++. Scalable, performant code tailored to real-world projects.
+                    </li>
+                    <li>
+                      <strong>🖥️ UI Development</strong><br>
+                      Responsive HUDs, menus, and in-game interfaces using UMG. I specialize in data-driven UI design and clean architecture to support complex interaction flows.
+                    </li>
+                    <li>
+                      <strong>🔧 Blueprint Refactoring & Optimization</strong><br>
+                      Untangling legacy Blueprints and improving performance and maintainability through structured C++ migration and modular system design.
+                    </li>
+                    <li>
+                      <strong>🛠 Tooling & Workflow Support</strong><br>
+                      Internal tools and editor scripting for designers and artists to speed up iteration, reduce human error, and streamline production.
+                    </li>
+                    <li>
+                      <strong>📦 Standalone Software Development</strong><br>
+                      I also enjoy working on standalone desktop tools and systems using C++, C#, and Python — especially when there's an interesting technical challenge or UX problem to solve.
+                    </li>
+                  </ul>
+                
+                <p>If you're working on an Unreal Engine project and need support improving your systems, UI, or codebase health — I’d love to help.</p>                  
+            </section>
+
+            <section id="Work">
+              <h1>My Work</h1>
+
+              <div class="portfolio-grid">
+                 <!-- This section contains portfolio items, each with an image and overlay text. -->
+                <div class="portfolio-item">
+                  <img src="images/twg.png" alt="Tanglewood Games">
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <b>Tanglewood Games</b><br><br>
+                      At Tanglewood Games, I am the UI point of contact for the company, providing consultation and support for colleagues as well as clients.<br>
+                      I work on a variety of projects for clients, which I will be happy to share once they are released.  
+                    </div>                 
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <img src="images/untildawn.jpg" alt="Until Dawn">
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <b>Until Dawn</b><br><br>
+                      Lead the UI team on the PS5 remake of the classic horror game <em>Until Dawn</em>.<br>
+                      Implemented a menu system from scratch in UMG and recreated classic gameplay elements from the original game.                      
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="portfolio-item">
+                  <img src="images/wtf.jpg" alt="Tomorrow Falls">
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <b>Tomorrow Falls</b><br><br>
+                      Part of the meta-UI team, I worked with backend engineers to integrate user data into the menus and develop systems allowing players to customise their characters and vehicles using UI widgets.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <img src="images/thequarry.jpg" alt="The Quarry">
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <b>The Quarry</b><br><br>
+                      I worked on the core systems team developing UI features for this original horror game.<br>
+                      My contributions included implementing core technology for menu systems and collaborating with artists to bring prototypes to life.                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <img src="images/hoa.jpg" alt="House of Ashes">
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <b>House of Ashes</b><br><br>
+                      Furthering the work on systems developed on <em>Little Hope</em> and <em>Man of Medan</em>, I worked on porting the UI to the House of Ashes project and supported the team with new gameplay features.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <img src="images/lh.jpg" alt="Little Hope">
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <b>Little Hope</b><br><br>
+                      As a reskin of the previous game, <em>Man of Medan</em>, I worked on porting the UI to the new project and implementing new features to support gameplay changes and requirements.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <img src="images/mom.jpg" alt="Man of Medan">
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <b>Man of Medan</b><br><br>
+                      The first game in the Dark Pictures Anthology series, I worked on the UI team to develop core menu systems, gameplay features, and multiplayer code to bring the game to life.<br>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section id="Contact">
+                <h1>Contact</h1>
+                <p>If you'd like to get in touch, feel free to use the form below or email me directly. I'm always happy to chat about interesting software projects, Unreal Engine development, or anything in between.</p>
+                
+                <p>Email: <a href="mailto:jackisaacs97@gmail.com">jackisaacs97@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/jackisaacs" target="_blank" rel="noopener noreferrer">linkedin.com/in/jackisaacs</a></p>
+                <p>GitHub: <a href="https://github.com/JackIsaacs" target="_blank" rel="noopener noreferrer">github.com/JackIsaacs</a></p>
+
+                <form id="emailForm">
+                    <table>
+                    <tr><td><label for="name">Name:</label></td></tr>
+                    <tr><td><input type="text" id="name" name="name" required /></td></tr>
+                
+                    <tr><td><label for="subject">Subject:</label></td></tr>
+                    <tr><td><input type="text" id="subject" name="subject" required /></td></tr>
+                
+                    <tr><td><label for="message">Message:</label></td></tr>
+                    <tr><td><textarea id="message" name="message" rows="10" cols="60" required></textarea></td></tr>
+                
+                    <tr><td><button type="submit">Send Email</button></td></tr>
+                    </table>
+                </form>
+
+                
+                
+            </section>
+        </main>
 </html>
