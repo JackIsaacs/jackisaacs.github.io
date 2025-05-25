@@ -85,7 +85,7 @@ nav ul li {
     gap: 1.5rem;
     justify-content: center;   /* centers the grid, optional */
     margin: 0 auto; /* <-- This centers the container */
-
+    padding: 20px;
   }
   
   .portfolio-item {
