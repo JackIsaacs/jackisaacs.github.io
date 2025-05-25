@@ -19,6 +19,7 @@ li {
 section {
     scroll-margin-top: 220px; /* height of your fixed header */
   }
+  
 
 main h1 {
     font-family: "Rubik", sans-serif;
@@ -78,10 +79,13 @@ nav ul li {
 }
 
 .portfolio-grid {
+    max-width: 1920px;
     display: flex;
     flex-wrap: wrap;           /* allows wrapping */
     gap: 1.5rem;
     justify-content: center;   /* centers the grid, optional */
+    margin: 0 auto; /* <-- This centers the container */
+
   }
   
   .portfolio-item {
@@ -141,4 +145,11 @@ nav ul li {
   .overlay-text {
     font-size: 1rem;
     line-height: 1.4;
+  }
+
+  .centred-content {
+    max-width: 900px;
+    margin: 0 auto; /* Centers the text block */
+    padding: 20px; /* Adds some padding around the text */
+    text-align: left; /* Centers the text */
   }
